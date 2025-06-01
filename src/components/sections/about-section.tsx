@@ -56,7 +56,7 @@ export default function AboutSection({ language }: AboutSectionProps) {
         <div className="flex flex-col items-center mb-12">
           <div className="relative w-40 h-40 sm:w-48 sm:h-48 md:w-56 md:h-56 mb-6">
             <Image
-              src="https://placehold.co/300x300.png"
+              src="/img/julia.jpeg"
               alt="Júlia Rosado"
               width={300}
               height={300}
