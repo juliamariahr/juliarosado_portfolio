@@ -49,14 +49,14 @@ export default function AboutSection({ language }: AboutSectionProps) {
     <section id="about" className="relative min-h-screen flex flex-col items-center justify-center pt-20 pb-28 px-4 sm:px-6 lg:px-8 bg-card/50">
       <div className="max-w-4xl w-full space-y-12">
         <div className="text-center">
-          <h2 className="text-4xl md:text-5xl font-headline text-primary mb-4">{content.mainTitle}</h2>
-          <p className="text-lg font-body text-muted-foreground mb-10">{content.mainSubtitle}</p>
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-headline text-primary mb-4">{content.mainTitle}</h2>
+          <p className="text-base sm:text-lg font-body text-muted-foreground mb-10">{content.mainSubtitle}</p>
         </div>
 
         <div className="flex flex-col items-center mb-12">
-          <div className="relative w-48 h-48 md:w-56 md:h-56 mb-6">
+          <div className="relative w-40 h-40 sm:w-48 sm:h-48 md:w-56 md:h-56 mb-6">
             <Image
-              src="/img/julia.jpeg"
+              src="https://placehold.co/300x300.png"
               alt="Júlia Rosado"
               width={300}
               height={300}
@@ -69,13 +69,13 @@ export default function AboutSection({ language }: AboutSectionProps) {
         <div className="grid md:grid-cols-1 gap-8">
           <Card className="shadow-lg">
             <CardHeader>
-              <CardTitle className="flex items-center font-headline text-2xl text-accent">
-                <UserCircle className="mr-3 h-7 w-7 text-icon" />
+              <CardTitle className="flex items-center font-headline text-xl sm:text-2xl text-accent">
+                <UserCircle className="mr-3 h-6 w-6 sm:h-7 sm:w-7 text-icon" />
                 {content.backgroundTitle}
               </CardTitle>
             </CardHeader>
             <CardContent>
-              <p className="font-body text-foreground leading-relaxed">
+              <p className="font-body text-foreground leading-relaxed text-base">
                 {content.backgroundText}
               </p>
             </CardContent>
@@ -83,13 +83,13 @@ export default function AboutSection({ language }: AboutSectionProps) {
 
           <Card className="shadow-lg">
             <CardHeader>
-              <CardTitle className="flex items-center font-headline text-2xl text-accent">
-                <Briefcase className="mr-3 h-7 w-7 text-icon" />
+              <CardTitle className="flex items-center font-headline text-xl sm:text-2xl text-accent">
+                <Briefcase className="mr-3 h-6 w-6 sm:h-7 sm:w-7 text-icon" />
                 {content.whatIDoTitle}
               </CardTitle>
             </CardHeader>
             <CardContent>
-              <p className="font-body text-foreground leading-relaxed">
+              <p className="font-body text-foreground leading-relaxed text-base">
                 {content.whatIDoText}
               </p>
             </CardContent>
@@ -97,15 +97,15 @@ export default function AboutSection({ language }: AboutSectionProps) {
           
           <Card className="shadow-lg">
             <CardHeader>
-              <CardTitle className="flex items-center font-headline text-2xl text-accent">
-                <Cpu className="mr-3 h-7 w-7 text-icon" />
+              <CardTitle className="flex items-center font-headline text-xl sm:text-2xl text-accent">
+                <Cpu className="mr-3 h-6 w-6 sm:h-7 sm:w-7 text-icon" />
                 {content.technologiesTitle}
               </CardTitle>
             </CardHeader>
             <CardContent>
-              <div className="flex flex-wrap gap-3">
+              <div className="flex flex-wrap gap-2 sm:gap-3">
                 {technologies.map((tech) => (
-                  <Badge key={tech} variant="secondary" className="font-body text-sm py-1 px-3 bg-primary/20 text-primary-foreground hover:bg-primary/30">
+                  <Badge key={tech} variant="secondary" className="font-body text-xs sm:text-sm py-1 px-2 sm:px-3 bg-primary/20 text-primary-foreground hover:bg-primary/30">
                     {tech}
                   </Badge>
                 ))}

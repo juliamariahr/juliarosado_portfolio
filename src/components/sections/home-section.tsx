@@ -87,14 +87,14 @@ export default function HomeSection({ language }: HomeSectionProps) {
   return (
     <section id="home" className="relative min-h-screen flex flex-col items-center justify-center text-center pt-20 pb-28 px-4 sm:px-6 lg:px-8">
       <div className="max-w-3xl">
-        <h1 className="text-5xl md:text-6xl font-headline text-primary mb-2">
+        <h1 className="text-4xl sm:text-5xl md:text-6xl font-headline text-primary mb-2">
           {content.title}
         </h1>
-        <p className="text-xl md:text-2xl font-body text-accent mb-6 h-10">
+        <p className="text-lg sm:text-xl md:text-2xl font-body text-accent mb-6 h-10">
           {currentText}
           <span className="animate-blink-cursor ml-1 text-accent relative" style={{ top: '-0.05em' }}>|</span>
         </p>
-        <p className="text-lg md:text-xl font-body text-foreground mb-8">
+        <p className="text-base sm:text-lg md:text-xl font-body text-foreground mb-8">
           {content.description}
         </p>
         <Button asChild size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground font-headline">

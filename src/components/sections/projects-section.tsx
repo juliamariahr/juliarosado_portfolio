@@ -46,7 +46,7 @@ const projectsData = {
       imageUrl: "/img/fapg.png",
       imageHint: "dashboard dados",
       repoUrl: "https://github.com/Sync-FATEC/API-2024.2-3SEM",
-      description: "Desenvolvido para a FAPG para aumentar a transparência na gestão de bolsas de projetos científicos. Este projeto full-stack possui backend em Spring Boot e MySQL para importação e gestão segura de dados, e frontend em React para dashboards dinâmicos, relatórios e operações CRUD para bolsas e bolsistas, garantindo conformidade com requisitos de divulgação pública.",
+      description: "Este projeto tem como objetivo desenvolver um portal de transparência para a Fundação de Apoio à Pesquisa de Pós-Graduandos (FAPG). Nossa meta é entregar uma plataforma robusta e eficiente, com funcionalidades que permitam a inserção de projetos, a realização de buscas avançadas por meio de filtros e a geração de estatísticas apresentadas em gráficos interativos, promovendo um acesso transparente e facilitado às informações públicas. O sistema é construído com um backend em Spring Boot e MySQL para importação e gerenciamento seguro de dados, e um frontend em React para dashboards dinâmicos, relatórios e operações CRUD para editais e beneficiários, garantindo conformidade com as exigências de divulgação pública.",
       technologies: ["Java (Spring Boot)", "MySQL", "React", "Python"]
     },
     {
@@ -55,7 +55,7 @@ const projectsData = {
       imageUrl: "/img/helpdesk.jpeg",
       imageHint: "sistema suporte",
       repoUrl: "https://github.com/Code-Nine-FTC/API-2024.1",
-      description: "Um sistema backend para gerenciamento de chamados de suporte técnico, construído com Node.js, TypeScript e MySQL. Possui controle de acesso baseado em função (admin, suporte, cliente), rastreamento de status de chamados, log histórico e implementação de SLA para otimizar fluxos de trabalho de serviço e garantir a qualidade do serviço.",
+      description: "O projeto tem o objetivo de desenvolver um sistema capaz de implementar melhorias no sistema de chamados e serviços, possuindo sistema de cadastro, criação de chamados a serem atendidos, registro de conclusão dos atendimentos e sistema de relatórios para análise. Atendendo no ramo de entregas, visando solucionar problemas relacionados a frete, rastreamento, dentre outros. O sistema é construído com um backend em Node.js, TypeScript e MySQL, implementando controle de acesso baseado em funções (admin, suporte, cliente), rastreamento de status dos chamados, registro histórico e implementação de SLA para otimizar fluxos de serviço e garantir qualidade no atendimento.",
       technologies: ["JavaScript", "TypeScript", "Node.js", "React", "CSS", "MySQL"]
     },
     {
@@ -64,7 +64,7 @@ const projectsData = {
       imageUrl: "/img/criancarenal.jpeg",
       imageHint: "plataforma comunidade",
       repoUrl: "https://github.com/TeamHiveAPI/API-2023.2",
-      description: "Um projeto de API acadêmico e website para 'Criança Renal', apoiando famílias de crianças com Doença Renal Crônica. Desenvolvido usando Flask (Python) para o backend, inclui funcionalidades como postagem de conteúdo, perfis de usuário com permissões e uploads de imagem. Como Scrum Master, facilitei processos ágeis. O projeto enfatiza empatia e usabilidade para fornecer informação e suporte para uma causa social.",
+      description: "O projeto Criança Renal foi desenvolvido na API (Aprendizagem por Projeto Integrador), realizado em grupo. O objetivo é criar um site informativo com o propósito de conscientizar a população brasileira sobre as dificuldades enfrentadas pelos pais de crianças com Doença Renal Crônica (DRC) para garantir um tratamento de qualidade. Além disso, o projeto visa auxiliar esses pais a encontrar hospitais especializados no cuidado de crianças com DRC, fornecendo informações sobre recursos e meios de tratamento disponíveis no Brasil.",
       technologies: ["Figma", "HTML", "CSS", "JavaScript", "Python", "Flask", "MySQL"]
     }
   ],
@@ -93,7 +93,7 @@ const projectsData = {
       imageUrl: "/img/fapg.png",
       imageHint: "data dashboard",
       repoUrl: "https://github.com/Sync-FATEC/API-2024.2-3SEM",
-      description: "Developed for FAPG to enhance transparency in managing scientific project grants. This full-stack project features a Spring Boot and MySQL backend for secure data import and management, and a React frontend for dynamic dashboards, reports, and CRUD operations for grants and grantees, ensuring compliance with public disclosure requirements.",
+      description: "This project is focused on developing a transparency portal for the Fundação de Apoio à Pesquisa de Pós-Graduandos (FAPG). The platform includes project submission, advanced data filtering, and interactive chart-based statistics, promoting transparency and easy access to public information. The system is built with a Spring Boot and MySQL backend for secure data import and management, and a React frontend for dynamic dashboards, reports, and CRUD operations for calls and beneficiaries, ensuring compliance with public disclosure requirements.",
       technologies: ["Java (Spring Boot)", "MySQL", "React", "Python"]
     },
     {
@@ -102,7 +102,7 @@ const projectsData = {
       imageUrl: "/img/helpdesk.jpeg",
       imageHint: "support system",
       repoUrl: "https://github.com/Code-Nine-FTC/API-2024.1",
-      description: "A backend system for technical support ticket management, built with Node.js, TypeScript, and MySQL. It features role-based access control (admin, support, client), ticket status tracking, historical logging, and SLA implementation to optimize service workflows and ensure quality of service.",
+      description: "This project focuses on developing a system to improve the ticketing and service management process. It includes user registration, support ticket creation, service completion tracking, and a reporting module for analysis. Designed for the delivery sector, the system aims to address issues related to freight, tracking, and other logistics challenges. Built with a Node.js, TypeScript, and MySQL backend, it implements role-based access control (admin, support, client), ticket status tracking, historical logging, and SLA implementation to optimize service flows and ensure quality support.",
       technologies: ["JavaScript", "TypeScript", "Node.js", "React", "CSS", "MySQL"]
     },
     {
@@ -111,7 +111,7 @@ const projectsData = {
       imageUrl: "/img/criancarenal.jpeg",
       imageHint: "community platform",
       repoUrl: "https://github.com/TeamHiveAPI/API-2023.2",
-      description: "An academic API project and website for 'Criança Renal', supporting families of children with Chronic Kidney Disease. Developed using Flask (Python) for the backend, it includes features like content posting, user profiles with permissions, and image uploads. As Scrum Master, I facilitated agile processes. The project emphasizes empathy and usability to provide information and support for a social cause.",
+      description: "The Criança Renal project was developed as part of the Integrated Project-Based Learning (API) program, as a collaborative group project. The goal was to create an informational website aimed at raising awareness among the Brazilian population about the challenges faced by parents of children with Chronic Kidney Disease (CKD) in accessing quality treatment. The project also seeks to help these families find hospitals specialized in pediatric CKD care by providing information on available resources and treatment options in Brazil.",
       technologies: ["Figma", "HTML", "CSS", "JavaScript", "Python", "Flask", "MySQL"]
     }
   ]
@@ -142,8 +142,8 @@ export default function ProjectsSection({ language }: ProjectsSectionProps) {
     <section id="projects" className="relative min-h-screen flex flex-col items-center justify-center pt-20 pb-28 px-4 sm:px-6 lg:px-8">
       <div className="max-w-5xl w-full">
         <div className="text-center mb-12">
-          <h2 className="text-4xl md:text-5xl font-headline text-primary mb-4">{content.title}</h2>
-          <p className="text-lg font-body text-muted-foreground">{content.subtitle}</p>
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-headline text-primary mb-4">{content.title}</h2>
+          <p className="text-base sm:text-lg font-body text-muted-foreground">{content.subtitle}</p>
         </div>
         <Accordion type="single" collapsible className="w-full space-y-6">
           {currentProjects.map((project) => (
@@ -151,8 +151,8 @@ export default function ProjectsSection({ language }: ProjectsSectionProps) {
               <Card className="shadow-lg overflow-hidden">
                 <AccordionTrigger className="hover:no-underline focus:no-underline p-0 group">
                   <CardHeader className="flex flex-row items-center justify-between w-full p-4 md:p-6 group-hover:bg-accent/10 transition-colors">
-                    <div className="flex items-center space-x-4">
-                       <div className="relative w-20 h-16 md:w-28 md:h-20 rounded-md overflow-hidden flex-shrink-0 shadow-md">
+                    <div className="flex items-center space-x-3 sm:space-x-4">
+                       <div className="relative w-16 h-12 sm:w-20 sm:h-16 md:w-28 md:h-20 rounded-md overflow-hidden flex-shrink-0 shadow-md">
                         <Image
                           src={project.imageUrl}
                           alt={project.title}
@@ -161,7 +161,7 @@ export default function ProjectsSection({ language }: ProjectsSectionProps) {
                           data-ai-hint={project.imageHint}
                         />
                       </div>
-                      <CardTitle className="font-headline text-xl md:text-2xl text-accent text-left group-hover:text-primary transition-colors">{project.title}</CardTitle>
+                      <CardTitle className="font-headline text-lg sm:text-xl md:text-2xl text-accent text-left group-hover:text-primary transition-colors">{project.title}</CardTitle>
                     </div>
                   </CardHeader>
                 </AccordionTrigger>
@@ -171,13 +171,13 @@ export default function ProjectsSection({ language }: ProjectsSectionProps) {
                       {project.description}
                     </CardDescription>
                     <div>
-                      <h4 className="flex items-center font-headline text-md text-primary mb-2">
+                      <h4 className="flex items-center font-headline text-sm sm:text-md text-primary mb-2">
                         <Code2 className="mr-2 h-5 w-5 text-icon" />
                         {content.techTitle}
                       </h4>
                       <div className="flex flex-wrap gap-2">
                         {project.technologies.map((tech) => (
-                          <Badge key={tech} variant="secondary" className="font-body text-xs py-1 px-2.5 bg-primary/20 text-primary-foreground hover:bg-primary/30">
+                          <Badge key={tech} variant="secondary" className="font-body text-xs py-1 px-2 sm:px-2.5 bg-primary/20 text-primary-foreground hover:bg-primary/30">
                             {tech}
                           </Badge>
                         ))}
@@ -185,7 +185,7 @@ export default function ProjectsSection({ language }: ProjectsSectionProps) {
                     </div>
                     {project.repoUrl && (
                       <div className="mt-4">
-                        <Button variant="outline" asChild className="border-primary/30 hover:bg-primary/10 text-primary hover:text-accent group">
+                        <Button variant="outline" asChild className="border-primary/30 hover:bg-primary/10 text-primary hover:text-accent group text-sm">
                           <Link href={project.repoUrl} target="_blank" rel="noopener noreferrer">
                             <Link2 className="mr-2 h-4 w-4 text-icon group-hover:text-accent transition-colors" />
                             {content.repoButton}
