@@ -60,6 +60,3 @@ firestore-debug.log
 # Testes
 .nyc_output/
 
-# Lockfiles de outros gerenciadores (se não usados)
-package-lock.json
-pnpm-lock.yaml
