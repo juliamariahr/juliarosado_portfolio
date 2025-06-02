@@ -17,19 +17,19 @@ const contactLinksData = {
     {
       name: 'GitHub',
       href: 'https://github.com/juliamariahr',
-      icon: <Github className="h-6 w-6 text-icon" />,
+      icon: <Github className="h-5 w-5 sm:h-6 sm:w-6 text-icon" />,
       handle: 'juliamariahr'
     },
     {
       name: 'LinkedIn',
       href: 'https://www.linkedin.com/in/júlia-rosado/',
-      icon: <Linkedin className="h-6 w-6 text-icon" />,
+      icon: <Linkedin className="h-5 w-5 sm:h-6 sm:w-6 text-icon" />,
       handle: 'júlia-rosado'
     },
     {
       name: 'E-mail',
       href: 'mailto:juliamariahhr@gmail.com',
-      icon: <Mail className="h-6 w-6 text-icon" />,
+      icon: <Mail className="h-5 w-5 sm:h-6 sm:w-6 text-icon" />,
       handle: 'juliamariahhr@gmail.com'
     },
   ],
@@ -37,19 +37,19 @@ const contactLinksData = {
     {
       name: 'GitHub',
       href: 'https://github.com/juliamariahr',
-      icon: <Github className="h-6 w-6 text-icon" />,
+      icon: <Github className="h-5 w-5 sm:h-6 sm:w-6 text-icon" />,
       handle: 'juliamariahr'
     },
     {
       name: 'LinkedIn',
       href: 'https://www.linkedin.com/in/júlia-rosado/',
-      icon: <Linkedin className="h-6 w-6 text-icon" />,
+      icon: <Linkedin className="h-5 w-5 sm:h-6 sm:w-6 text-icon" />,
       handle: 'júlia-rosado'
     },
     {
       name: 'Email',
       href: 'mailto:juliamariahhr@gmail.com',
-      icon: <Mail className="h-6 w-6 text-icon" />,
+      icon: <Mail className="h-5 w-5 sm:h-6 sm:w-6 text-icon" />,
       handle: 'juliamariahhr@gmail.com'
     },
   ]
@@ -78,30 +78,30 @@ export default function ContactSection({ language }: ContactSectionProps) {
     <section id="contact" className="relative min-h-screen flex flex-col items-center justify-center pt-20 pb-28 px-4 sm:px-6 lg:px-8 bg-card/50">
       <div className="max-w-2xl w-full">
         <div className="text-center mb-12">
-          <h2 className="text-4xl md:text-5xl font-headline text-primary mb-4">{content.mainTitle}</h2>
-          <p className="text-lg font-body text-muted-foreground">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-headline text-primary mb-4">{content.mainTitle}</h2>
+          <p className="text-base sm:text-lg font-body text-muted-foreground">
             {content.mainSubtitle}
           </p>
         </div>
         
         <Card className="shadow-xl">
           <CardHeader>
-            <CardTitle className="font-headline text-2xl text-center text-accent">{content.cardTitle}</CardTitle>
+            <CardTitle className="font-headline text-xl sm:text-2xl text-center text-accent">{content.cardTitle}</CardTitle>
           </CardHeader>
-          <CardContent className="space-y-6">
+          <CardContent className="space-y-4 sm:space-y-6">
             {currentLinks.map((link) => (
               <Button
                 key={link.name}
                 variant="outline"
-                className="w-full justify-start p-6 h-auto border-primary/30 hover:bg-primary/10 group"
+                className="w-full justify-start p-4 sm:p-6 h-auto border-primary/30 hover:bg-primary/10 group"
                 asChild
               >
                 <Link href={link.href} target="_blank" rel="noopener noreferrer">
-                  <div className="flex items-center space-x-4">
+                  <div className="flex items-center space-x-3 sm:space-x-4">
                     {link.icon}
                     <div>
-                      <p className="font-headline text-lg text-primary group-hover:text-accent transition-colors">{link.name}</p>
-                      <p className="font-body text-sm text-muted-foreground group-hover:text-accent/80 transition-colors">{link.handle}</p>
+                      <p className="font-headline text-base sm:text-lg text-primary group-hover:text-accent transition-colors">{link.name}</p>
+                      <p className="font-body text-xs sm:text-sm text-muted-foreground group-hover:text-accent/80 transition-colors">{link.handle}</p>
                     </div>
                   </div>
                 </Link>
@@ -110,7 +110,12 @@ export default function ContactSection({ language }: ContactSectionProps) {
           </CardContent>
         </Card>
       </div>
-      <AnimatedArrow href="#home" ariaLabel={content.scrollToTop} />
+      <AnimatedArrow 
+        href="#home" 
+        direction="up"
+        text={content.scrollToTop}
+        ariaLabel={content.scrollToTop} 
+      />
     </section>
   );
 }
