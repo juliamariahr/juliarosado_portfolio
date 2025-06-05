@@ -1,4 +1,3 @@
-
 'use client';
 
 import Image from 'next/image';
@@ -36,9 +35,18 @@ const projectsData = {
       title: "Estações Climáticas - Tecsus",
       imageUrl: "/img/tecsus.jpg",
       imageHint: "weather station data",
-      repoUrl: "",
+      repoUrl: "https://github.com/Code-Nine-FTC/API-2025.1",
       description: "Este projeto visa a coleta e processamento de dados de Estações Meteorológicas para o cliente Tecsus. O sistema permite inserção e busca de dados, além da exibição de estatísticas em gráficos interativos. A iniciativa atende à demanda da Tecsus para o monitoramento ambiental, utilizando sensores de baixo custo para medir vento, chuva, umidade, temperatura e pressão. Os dados são transmitidos para um servidor e exibidos em um portal com dashboards e relatórios, promovendo também a aprendizagem baseada em problemas.",
       technologies: ["Figma", "GitHub", "HTML", "CSS", "Python", "FastAPI", "React", "MongoDB", "AWS", "PostgreSQL", "Mosquitto", "Material UI", "IoT"]
+    },
+    {
+      id: "project-6",
+      title: "Cute Cat Bot – Bot de Gatinhos para Discord",
+      imageUrl: "/img/cutecat.png",
+      imageHint: "cute cat bot",
+      repoUrl: "https://github.com/juliamariahr/CuteCatBot-site",
+      description: "O Cute Cat Bot é um bot em Python para Discord que envia automaticamente imagens fofas de gatinhos todos os dias às 16h (BRT). Utiliza a biblioteca discord.py com Slash Commands via @app_commands, além de um servidor Flask para manter o bot online. A configuração é simples, com comando para definir o canal de envio por servidor. O projeto conta com agendamento assíncrono, armazenamento em JSON e estrutura modular, sendo ideal tanto para fins de aprendizado quanto para integração prática com APIs e automações em chat. Segue as políticas de segurança exigidas pelo Discord.",
+      technologies: ["Python", "Flask", "JSON", "asyncio", "The Cat API", "discord.py"]
     },
     {
       id: "project-2",
@@ -83,9 +91,18 @@ const projectsData = {
       title: "Weather Stations - Tecsus",
       imageUrl: "/img/tecsus.jpg",
       imageHint: "weather station data",
-      repoUrl: "",
+      repoUrl: "https://github.com/Code-Nine-FTC/API-2025.1",
       description: "This project, for the client Tecsus, focuses on collecting and processing data from Weather Stations. The system allows for data insertion and retrieval, as well as displaying statistics on interactive graphs. The initiative addresses Tecsus's demand for environmental monitoring, using low-cost sensors to measure wind, rain, humidity, temperature, and pressure. Data is transmitted to a server and displayed on a portal with dashboards and reports, also promoting problem-based learning.",
       technologies: ["Figma", "GitHub", "HTML", "CSS", "Python", "FastAPI", "React", "MongoDB", "AWS", "PostgreSQL", "Mosquitto", "Material UI", "IoT"]
+    },
+    {
+      id: "project-6",
+      title: "Cute Cat Bot – Discord Cat Image Bot",
+      imageUrl: "/img/cutecat.png",
+      imageHint: "cute cat bot",
+      repoUrl: "https://github.com/juliamariahr/CuteCatBot-site",
+      description: "Cute Cat Bot is a Python-based Discord bot that automatically sends cute cat images every day at 4 PM (BRT). It uses the discord.py library with Slash Commands via @app_commands, along with a lightweight Flask server to keep the bot running. Configuration is simple, allowing admins to set the target channel per server. The project features asynchronous scheduling, JSON-based storage, and a modular code structure, making it ideal both for learning purposes and for practical API integration and chat automation. It follows Discord's security and privacy guidelines.",
+      technologies: ["Python", "Flask", "JSON", "asyncio", "The Cat API", "discord.py"]
     },
     {
       id: "project-2",
@@ -120,14 +137,14 @@ const projectsData = {
 const sectionContent = {
   pt: {
     title: "Meus Projetos",
-    subtitle: "Uma amostra das minhas capacidades técnicas e empreendimentos criativos.",
+    subtitle: "Uma amostra das minhas capacidades técnicas e projetos criativos.",
     techTitle: "Tecnologias Utilizadas:",
     repoButton: "Ver Repositório",
     scrollToNext: "Ir para Contato"
   },
   en: {
     title: "My Projects",
-    subtitle: "A glimpse into my technical capabilities and creative endeavors.",
+    subtitle: "A glimpse into my technical capabilities and creative projects.",
     techTitle: "Technologies Used:",
     repoButton: "View Repository",
     scrollToNext: "Go to Contact"
@@ -148,8 +165,8 @@ export default function ProjectsSection({ language }: ProjectsSectionProps) {
         <Accordion type="single" collapsible className="w-full space-y-6">
           {currentProjects.map((project) => (
             <AccordionItem key={project.id} value={project.id} asChild>
-              <Card className="shadow-lg overflow-hidden">
-                <AccordionTrigger className="hover:no-underline focus:no-underline p-0 group">
+              <Card className="shadow-lg overflow-hidden group">
+                <AccordionTrigger className="hover:no-underline focus:no-underline p-0">
                   <CardHeader className="flex flex-row items-center justify-between w-full p-4 md:p-6 group-hover:bg-accent/10 transition-colors">
                     <div className="flex items-center space-x-3 sm:space-x-4">
                        <div className="relative w-16 h-12 sm:w-20 sm:h-16 md:w-28 md:h-20 rounded-md overflow-hidden flex-shrink-0 shadow-md">
@@ -166,33 +183,45 @@ export default function ProjectsSection({ language }: ProjectsSectionProps) {
                   </CardHeader>
                 </AccordionTrigger>
                 <AccordionContent>
-                  <div className="p-4 md:p-6 pt-2 space-y-4">
-                    <CardDescription className="font-body text-foreground/90 text-base leading-relaxed">
-                      {project.description}
-                    </CardDescription>
-                    <div>
-                      <h4 className="flex items-center font-headline text-sm sm:text-md text-primary mb-2">
-                        <Code2 className="mr-2 h-5 w-5 text-icon" />
-                        {content.techTitle}
-                      </h4>
-                      <div className="flex flex-wrap gap-2">
-                        {project.technologies.map((tech) => (
-                          <Badge key={tech} variant="secondary" className="font-body text-xs py-1 px-2 sm:px-2.5 bg-primary/20 text-primary-foreground hover:bg-primary/30">
-                            {tech}
-                          </Badge>
-                        ))}
-                      </div>
+                  <div className="p-4 md:p-6 pt-2 md:grid md:grid-cols-2 md:gap-x-6 lg:gap-x-8 space-y-6 md:space-y-0">
+                    <div className="relative w-full aspect-video rounded-lg overflow-hidden shadow-xl mb-4 md:mb-0 md:col-span-1">
+                      <Image
+                        src={project.imageUrl}
+                        alt={project.title}
+                        fill
+                        style={{ objectFit: 'cover' }}
+                        data-ai-hint={project.imageHint}
+                        className="transition-transform duration-300 ease-in-out group-data-[state=open]:scale-105"
+                      />
                     </div>
-                    {project.repoUrl && (
-                      <div className="mt-4">
-                        <Button variant="outline" asChild className="border-primary/30 hover:bg-primary/10 text-primary hover:text-accent group text-sm">
-                          <Link href={project.repoUrl} target="_blank" rel="noopener noreferrer">
-                            <Link2 className="mr-2 h-4 w-4 text-icon group-hover:text-accent transition-colors" />
-                            {content.repoButton}
-                          </Link>
-                        </Button>
+                    <div className="md:col-span-1 flex flex-col justify-center">
+                      <CardDescription className="font-body text-foreground/90 text-base leading-relaxed mb-4">
+                        {project.description}
+                      </CardDescription>
+                      <div className="mb-4">
+                        <h4 className="flex items-center font-headline text-sm sm:text-md text-primary mb-2">
+                          <Code2 className="mr-2 h-5 w-5 text-icon" />
+                          {content.techTitle}
+                        </h4>
+                        <div className="flex flex-wrap gap-2">
+                          {project.technologies.map((tech) => (
+                            <Badge key={tech} variant="secondary" className="font-body text-xs py-1 px-2 sm:px-2.5 bg-primary/20 text-primary-foreground hover:bg-primary/30">
+                              {tech}
+                            </Badge>
+                          ))}
+                        </div>
                       </div>
-                    )}
+                      {project.repoUrl && (
+                        <div className="mt-auto pt-4">
+                          <Button variant="outline" asChild className="border-primary/30 hover:bg-primary/10 text-primary hover:text-accent group text-sm">
+                            <Link href={project.repoUrl} target="_blank" rel="noopener noreferrer">
+                              <Link2 className="mr-2 h-4 w-4 text-icon group-hover:text-accent transition-colors" />
+                              {content.repoButton}
+                            </Link>
+                          </Button>
+                        </div>
+                      )}
+                    </div>
                   </div>
                 </AccordionContent>
               </Card>

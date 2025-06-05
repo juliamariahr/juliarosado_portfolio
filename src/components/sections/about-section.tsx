@@ -15,7 +15,7 @@ interface AboutSectionProps {
 const technologies = [
   'Python', 'JavaScript', 'TypeScript', 'Java',
   'MySQL', 'MongoDB', 'PostgreSQL',
-  'Flask', 'React', 'Node.js', 'Vue.js', 'Bootstrap', 'Spring Framework', 'React Native',
+  'Flask', 'React', 'Node.js', 'Vue.js', 'Next.js', 'Bootstrap', 'Spring Framework', 'React Native',
   'Scrum', 'Git', 'GitHub', 'Docker', 'DBeaver'
 ];
 
@@ -24,9 +24,9 @@ const aboutContent = {
     mainTitle: "Sobre Mim",
     mainSubtitle: "Minha jornada, paixão e experiência.",
     backgroundTitle: "Minha Trajetória",
-    backgroundText: "Sou uma profissional comunicativa, proativa e comprometida, com facilidade para trabalhar em equipe, me adaptar a novos desafios e manter o foco em qualidade e eficiência nas entregas. Entrei na tecnologia por influência do meu pai e da minha irmã, e comecei essa jornada aos 11 anos, brincando com HTML no Tumblr por pura diversão, sem nem imaginar onde isso iria me levar. Atualmente curso Desenvolvimento de Software Multiplataforma na FATEC São José dos Campos, com previsão de conclusão em 2026, e possuo inglês em nível intermediário.",
+    backgroundText: "Entrei na tecnologia por influência do meu pai e da minha irmã, e comecei essa jornada aos 11 anos, brincando com HTML no Tumblr por pura diversão, sem imaginar onde isso poderia me levar. Atualmente curso Desenvolvimento de Software Multiplataforma na FATEC São José dos Campos, com previsão de conclusão em 2026, e possuo inglês em nível intermediário. Sou uma profissional comunicativa, proativa e comprometida, com facilidade para trabalhar em equipe, me adaptar a novos desafios e manter o foco em qualidade e eficiência nas entregas.",
     whatIDoTitle: "O Que Eu Faço",
-    whatIDoText: "Atuo como desenvolvedora fullstack em ambientes colaborativos que adotam metodologias ágeis e incentivam inovação e aprendizado contínuo. Tenho foco em entregar soluções digitais escaláveis e bem estruturadas, participando de todo o ciclo de desenvolvimento, da definição técnica à entrega em produção, sempre com atenção à qualidade, performance e manutenibilidade do código.",
+    whatIDoText: "Atuo como desenvolvedora fullstack, com experiência tanto no frontend quanto no backend, participando de todo o ciclo de desenvolvimento de software. Trabalho em ambientes ágeis e colaborativos, com foco em entregar soluções escaláveis, bem estruturadas e fáceis de manter, sempre com atenção à qualidade, performance e boas práticas.",
     technologiesTitle: "Tecnologias que Utilizo",
     scrollToNext: "Ir para Projetos"
   },
@@ -34,9 +34,9 @@ const aboutContent = {
     mainTitle: "About Me",
     mainSubtitle: "My journey, my passion, and my expertise.",
     backgroundTitle: "My Background",
-    backgroundText: "I'm a communicative, proactive, and committed professional, with strong teamwork skills, adaptability to new challenges, and a focus on delivering quality and efficiency. I got into tech thanks to my dad and sister, starting this journey at age 11 by playing around with HTML on Tumblr just for fun, without any idea where it would lead me. I'm currently studying Multiplatform Software Development at FATEC São José dos Campos, expected to graduate in 2026, and I have an intermediate level of English.",
+    backgroundText: "I got into tech influenced by my father and sister, and started this journey at the age of 11, playing around with HTML on Tumblr just for fun — without having any idea where it would lead me. I'm currently pursuing a degree in Multiplatform Software Development at FATEC São José dos Campos, expected to graduate in 2026, and I have an intermediate level of English. I'm a communicative, proactive, and committed professional, with strong teamwork skills, adaptability to new challenges, and a consistent focus on delivering quality and efficiency.",
     whatIDoTitle: "What I Do",
-    whatIDoText: "I work as a fullstack developer in collaborative environments that follow agile methodologies and promote innovation and continuous learning. I focus on delivering scalable, well-structured digital solutions, participating in the entire development cycle, from technical planning to production deployment, always paying attention to code quality, performance, and maintainability.",
+    whatIDoText: "I work as a fullstack developer with experience in both frontend and backend, contributing throughout the entire software development lifecycle. I operate in agile, collaborative environments, focusing on delivering scalable, well-structured, and maintainable solutions, always with attention to quality, performance, and best practices.",
     technologiesTitle: "Technologies I Use",
     scrollToNext: "Go to Projects"
   }
