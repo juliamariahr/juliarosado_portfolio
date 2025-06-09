@@ -16,14 +16,16 @@ const homeContent = {
     title: "Júlia Rosado",
     typedPhrases: ["Desenvolvedora Full-Stack", "Desenvolvedora Backend", "Amante de Gatos", "Gamer"],
     description: "Sou Júlia, desenvolvedora full-stack apaixonada por criar soluções digitais inovadoras e eficientes. Explore meus projetos, conheça minhas habilidades e veja como utilizo desenvolvimento colaborativo e metodologias ágeis para construir aplicações de impacto.",
-    buttonText: "Ver Meus Trabalhos",
+    workButtonText: "Ver Meus Trabalhos",
+    cvButtonText: "Ver Currículo",
     scrollToNext: "Ir para Sobre Mim"
   },
   en: {
     title: "Júlia Rosado",
     typedPhrases: ["Full-Stack Developer", "Backend Developer", "Cat Lover", "Gamer"],
     description: "I'm Júlia, a full-stack developer passionate about creating innovative and efficient digital solutions. Explore my projects, learn about my skills, and see how I leverage collaborative development and agile methodologies to build impactful applications.",
-    buttonText: "View My Work",
+    workButtonText: "View My Work",
+    cvButtonText: "View CV",
     scrollToNext: "Go to About Me"
   }
 };
@@ -85,7 +87,7 @@ export default function HomeSection({ language }: HomeSectionProps) {
 
 
   return (
-    <section id="home" className="relative min-h-screen flex flex-col items-center justify-center text-center pt-20 pb-28 px-4 sm:px-6 lg:px-8">
+    <section id="home" className="relative min-h-screen flex flex-col items-center justify-center text-center pt-20 pb-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-3xl">
         <h1 className="text-4xl sm:text-5xl md:text-6xl font-headline text-primary mb-2">
           {content.title}
@@ -97,12 +99,18 @@ export default function HomeSection({ language }: HomeSectionProps) {
         <p className="text-base sm:text-lg md:text-xl font-body text-foreground mb-8">
           {content.description}
         </p>
-        <Button asChild size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground font-headline">
-          <Link href="#projects">{content.buttonText}</Link>
-        </Button>
+        <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
+          <Button asChild size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground font-headline">
+            <Link href="#projects">{content.workButtonText}</Link>
+          </Button>
+          <Button asChild variant="outline" size="lg" className="border-accent text-accent hover:bg-accent/10 hover:text-accent-foreground font-headline">
+            <a href="/julia_rosado_cv.pdf" target="_blank" rel="noopener noreferrer">
+              {content.cvButtonText}
+            </a>
+          </Button>
+        </div>
       </div>
       <AnimatedArrow href="#about" ariaLabel={content.scrollToNext} />
     </section>
   );
 }
-
