@@ -4,8 +4,8 @@ import { Toaster } from "@/components/ui/toaster";
 import { Analytics } from "@vercel/analytics/next";
 
 export const metadata: Metadata = {
-  title: 'Júlia Rosado | Desenvolvedora Full-Stack',
-  description: "Portfólio pessoal de Júlia Maria Helbusto Rosado, apresentando projetos e habilidades de desenvolvimento full-stack.",
+  title: 'Júlia Rosado | Desenvolvedora FullStack',
+  description: "Portfólio pessoal de Júlia Rosado, apresentando projetos e habilidades de desenvolvimento fullstack.",
 };
 
 export default function RootLayout({
