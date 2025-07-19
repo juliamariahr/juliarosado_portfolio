@@ -12,32 +12,61 @@ interface AboutSectionProps {
   language: Language;
 }
 
-const technologies = [
-  'Python', 'JavaScript', 'TypeScript', 'Java',
-  'MySQL', 'MongoDB', 'PostgreSQL',
-  'Flask', 'React', 'Node.js', 'Vue.js', 'Next.js', 'Bootstrap', 'Spring Framework', 'React Native',
-  'Scrum', 'Git', 'GitHub', 'Docker', 'DBeaver'
-];
-
 const aboutContent = {
   pt: {
     mainTitle: "Sobre Mim",
     mainSubtitle: "Minha jornada, paixão e experiência.",
     backgroundTitle: "Minha Trajetória",
-    backgroundText: "Entrei na tecnologia por influência do meu pai e da minha irmã, e comecei essa jornada aos 11 anos, brincando com HTML no Tumblr por pura diversão, sem imaginar onde isso poderia me levar. Atualmente curso Desenvolvimento de Software Multiplataforma na FATEC São José dos Campos, com previsão de conclusão em 2026, e possuo inglês em nível intermediário. Sou uma profissional comunicativa, proativa e comprometida, com facilidade para trabalhar em equipe, me adaptar a novos desafios e manter o foco em qualidade e eficiência nas entregas.",
+    backgroundText: "Sou estudante de Desenvolvimento de Software Multiplataforma na FATEC São José dos Campos (conclusão prevista para 2026), com foco em me tornar uma desenvolvedora fullstack. Meu interesse por tecnologia começou cedo, por influência do meu pai e da minha irmã. Aos 11 anos, tive meu primeiro contato com HTML brincando no Tumblr, o que despertou minha curiosidade pela área. Anos depois, decidi seguir profissionalmente na área de desenvolvimento e venho aprimorando minhas habilidades desde então. Tenho perfil proativo, comunicativo e comprometido, com facilidade para aprender, colaborar em equipe e resolver problemas. Possuo inglês em nível intermediário.",
     whatIDoTitle: "O Que Eu Faço",
-    whatIDoText: "Atuo como desenvolvedora fullstack, com experiência tanto no frontend quanto no backend, participando de todo o ciclo de desenvolvimento de software. Trabalho em ambientes ágeis e colaborativos, com foco em entregar soluções escaláveis, bem estruturadas e fáceis de manter, sempre com atenção à qualidade, performance e boas práticas.",
+    whatIDoText: "Desenvolvo projetos como fullstack durante minha formação, com foco em aprender e aplicar boas práticas de desenvolvimento. Tenho experiência prática com linguagens como JavaScript, Python e Java, usando frameworks como React, Node.js, Flask e Spring. Participei de projetos acadêmicos que simularam ambientes reais, com uso de metodologias ágeis e integração contínua.",
     technologiesTitle: "Tecnologias que Utilizo",
+    techCategories: [
+      {
+        title: "Linguagens",
+        skills: ['Python', 'JavaScript', 'TypeScript', 'Java']
+      },
+      {
+        title: "Bancos de Dados",
+        skills: ['MySQL', 'MongoDB', 'PostgreSQL', 'DBeaver']
+      },
+      {
+        title: "Frameworks & Bibliotecas",
+        skills: ['Flask', 'React', 'Node.js', 'Vue.js', 'Bootstrap', 'Spring Framework', 'React Native']
+      },
+      {
+        title: "Metodologias & Ferramentas",
+        skills: ['Scrum', 'Git', 'GitHub', 'Docker']
+      }
+    ],
     scrollToNext: "Ir para Projetos"
   },
   en: {
     mainTitle: "About Me",
     mainSubtitle: "My journey, my passion, and my expertise.",
     backgroundTitle: "My Background",
-    backgroundText: "I got into tech influenced by my father and sister, and started this journey at the age of 11, playing around with HTML on Tumblr just for fun — without having any idea where it would lead me. I'm currently pursuing a degree in Multiplatform Software Development at FATEC São José dos Campos, expected to graduate in 2026, and I have an intermediate level of English. I'm a communicative, proactive, and committed professional, with strong teamwork skills, adaptability to new challenges, and a consistent focus on delivering quality and efficiency.",
+    backgroundText: "I’m a Software Development student at FATEC São José dos Campos (expected graduation in 2026), focused on becoming a fullstack developer. My interest in technology started early, influenced by my father and sister. At 11, I had my first contact with HTML while customizing Tumblr themes for fun, which sparked my curiosity about the field. Years later, I decided to pursue software development professionally and have been improving my skills ever since. I’m proactive, communicative, and committed, with strong problem-solving skills and the ability to learn quickly and collaborate in teams. I have an intermediate level of English.",
     whatIDoTitle: "What I Do",
-    whatIDoText: "I work as a fullstack developer with experience in both frontend and backend, contributing throughout the entire software development lifecycle. I operate in agile, collaborative environments, focusing on delivering scalable, well-structured, and maintainable solutions, always with attention to quality, performance, and best practices.",
+    whatIDoText: "I’ve been developing fullstack projects during my studies, with a focus on learning and applying development best practices. I have hands-on experience with languages like JavaScript, Python, and Java, using frameworks such as React, Node.js, Flask, and Spring. I’ve participated in academic projects that simulated real-world environments, applying agile methodologies and continuous integration.",
     technologiesTitle: "Technologies I Use",
+    techCategories: [
+      {
+        title: "Languages",
+        skills: ['Python', 'JavaScript', 'TypeScript', 'Java']
+      },
+      {
+        title: "Databases",
+        skills: ['MySQL', 'MongoDB', 'PostgreSQL', 'DBeaver']
+      },
+      {
+        title: "Frameworks & Libraries",
+        skills: ['Flask', 'React', 'Node.js', 'Vue.js', 'Bootstrap', 'Spring Framework', 'React Native']
+      },
+      {
+        title: "Methodologies & Tools",
+        skills: ['Scrum', 'Git', 'GitHub', 'Docker']
+      }
+    ],
     scrollToNext: "Go to Projects"
   }
 };
@@ -102,14 +131,19 @@ export default function AboutSection({ language }: AboutSectionProps) {
                 {content.technologiesTitle}
               </CardTitle>
             </CardHeader>
-            <CardContent>
-              <div className="flex flex-wrap gap-2 sm:gap-3">
-                {technologies.map((tech) => (
-                  <Badge key={tech} variant="secondary" className="font-body text-xs sm:text-sm py-1 px-2 sm:px-3 bg-primary/20 text-primary-foreground hover:bg-primary/30">
-                    {tech}
-                  </Badge>
-                ))}
-              </div>
+            <CardContent className="space-y-6">
+              {content.techCategories.map((category) => (
+                <div key={category.title}>
+                  <h3 className="font-headline text-lg text-primary mb-3">{category.title}</h3>
+                  <div className="flex flex-wrap gap-2">
+                    {category.skills.map((tech) => (
+                      <Badge key={tech} variant="secondary" className="font-body text-xs py-1 px-2 bg-primary/20 text-primary-foreground hover:bg-primary/30">
+                        {tech}
+                      </Badge>
+                    ))}
+                  </div>
+                </div>
+              ))}
             </CardContent>
           </Card>
         </div>
