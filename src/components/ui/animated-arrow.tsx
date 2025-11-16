@@ -25,19 +25,18 @@ export default function AnimatedArrow({
   return (
     <div className={cn(
       "absolute left-1/2 -translate-x-1/2 z-10",
-      direction === 'down' ? "bottom-10" : "bottom-10",
+      "bottom-10",
       className
     )}>
-      <Link href={href} passHref legacyBehavior>
-        <a
-          aria-label={ariaLabel}
-          className="inline-flex flex-col items-center p-2 rounded-full hover:bg-accent/20 focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 transition-colors animate-bounce-subtle"
-        >
-          <IconComponent className="h-8 w-8 text-primary drop-shadow-md" />
-          {text && (
-            <span className="mt-1 text-xs text-primary font-body">{text}</span>
-          )}
-        </a>
+      <Link
+        href={href}
+        aria-label={ariaLabel}
+        className="inline-flex flex-col items-center p-2 rounded-full hover:bg-accent/20 focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 transition-colors animate-bounce-subtle"
+      >
+        <IconComponent className="h-8 w-8 text-primary drop-shadow-md" />
+        {text && (
+          <span className="mt-1 text-xs text-primary font-body">{text}</span>
+        )}
       </Link>
     </div>
   );

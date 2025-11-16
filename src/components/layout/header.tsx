@@ -1,10 +1,9 @@
-
 'use client';
 
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import type { Language } from '@/app/page';
-import { Globe } from 'lucide-react';
+import { Globe, Sparkles } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
 interface HeaderProps {
@@ -27,23 +26,17 @@ const navItemsData = {
   ]
 };
 
-const portfolioNameData = {
-  pt: 'Júlia Rosado',
-  en: 'Júlia Rosado',
-};
-
 export default function Header({ language, toggleLanguage }: HeaderProps) {
   const currentNavItems = navItemsData[language];
-  const portfolioName = portfolioNameData[language];
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="container mx-auto flex max-w-7xl flex-col items-center px-4 py-3 sm:h-16 sm:flex-row sm:justify-between sm:py-0 sm:px-6 lg:px-8">
+      <div className="container mx-auto flex max-w-7xl flex-col items-center px-4 py-3 sm:h-16 sm:flex-row sm:justify-between sm:py-0 sm:px-4 lg:px-6">
         <Link
           href="#home"
-          className="text-xl font-headline text-primary transition-colors hover:text-primary/80 sm:text-2xl mb-2 sm:mb-0"
+          className="text-primary transition-colors hover:text-primary/80 mb-2 sm:mb-0 hidden sm:block"
         >
-          {portfolioName}
+          <Sparkles className="h-7 w-7 fill-current" />
         </Link>
         <nav className="flex flex-wrap items-center justify-center gap-x-1 gap-y-1 sm:gap-x-2">
           {currentNavItems.map((item) => (

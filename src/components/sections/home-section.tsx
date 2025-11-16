@@ -14,7 +14,7 @@ interface HomeSectionProps {
 const homeContent = {
   pt: {
     title: "Júlia Rosado",
-    typedPhrases: ["Desenvolvedora Full-Stack", "Desenvolvedora Backend", "Amante de Gatos", "Gamer"],
+    typedPhrases: ["Desenvolvedora Full-Stack", "Amante de Gatos", "Gamer"],
     description: "Sou Júlia, desenvolvedora full-stack apaixonada por criar soluções digitais inovadoras e eficientes. Explore meus projetos, conheça minhas habilidades e veja como utilizo desenvolvimento colaborativo e metodologias ágeis para construir aplicações de impacto.",
     workButtonText: "Ver Meus Trabalhos",
     cvButtonText: "Ver Currículo",
@@ -22,7 +22,7 @@ const homeContent = {
   },
   en: {
     title: "Júlia Rosado",
-    typedPhrases: ["Full-Stack Developer", "Backend Developer", "Cat Lover", "Gamer"],
+    typedPhrases: ["Full-Stack Developer", "Cat Lover", "Gamer"],
     description: "I'm Júlia, a full-stack developer passionate about creating innovative and efficient digital solutions. Explore my projects, learn about my skills, and see how I leverage collaborative development and agile methodologies to build impactful applications.",
     workButtonText: "View My Work",
     cvButtonText: "View CV",
