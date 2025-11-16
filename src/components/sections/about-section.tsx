@@ -24,7 +24,7 @@ const aboutContent = {
     techCategories: [
       {
         title: "Linguagens",
-        skills: ['Python', 'JavaScript', 'TypeScript', 'Java']
+        skills: ['Python', 'JavaScript', 'TypeScript', 'Java', 'Dart']
       },
       {
         title: "Bancos de Dados",
@@ -32,7 +32,7 @@ const aboutContent = {
       },
       {
         title: "Frameworks & Bibliotecas",
-        skills: ['Flask', 'React', 'Node.js', 'Vue.js', 'Bootstrap', 'Spring Framework', 'React Native']
+        skills: ['Flask', 'React', 'Node.js', 'Vue.js', 'Bootstrap', 'Spring Framework', 'React Native', 'Flutter']
       },
       {
         title: "Metodologias & Ferramentas",
@@ -52,7 +52,7 @@ const aboutContent = {
     techCategories: [
       {
         title: "Languages",
-        skills: ['Python', 'JavaScript', 'TypeScript', 'Java']
+        skills: ['Python', 'JavaScript', 'TypeScript', 'Java', 'Dart']
       },
       {
         title: "Databases",
@@ -60,7 +60,7 @@ const aboutContent = {
       },
       {
         title: "Frameworks & Libraries",
-        skills: ['Flask', 'React', 'Node.js', 'Vue.js', 'Bootstrap', 'Spring Framework', 'React Native']
+        skills: ['Flask', 'React', 'Node.js', 'Vue.js', 'Bootstrap', 'Spring Framework', 'React Native', 'Flutter']
       },
       {
         title: "Methodologies & Tools",
