@@ -25,7 +25,7 @@ export default function AnimatedArrow({
   return (
     <div className={cn(
       "absolute left-1/2 -translate-x-1/2 z-10",
-      "bottom-10",
+      "bottom-4 xl:bottom-8",
       className
     )}>
       <Link
