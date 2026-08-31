@@ -20,22 +20,6 @@ Um portfólio responsivo e moderno que conta um pouquinho da minha história com
 - 🚀 **Projetos** - Os trabalhos que mais me orgulho
 - 📧 **Contato** - Vamos conversar!
 
-### ✨ Características especiais
-
-- 🌍 **Bilíngue** - Disponível em Português e Inglês
-- 📱 **Responsivo** - Funciona perfeitamente em qualquer dispositivo
-- 🎨 **Design moderno** - Interface limpa e intuitiva
-- ⚡ **Performance** - Otimizado para carregamento rápido
-
-## 🛠️ Tecnologias utilizadas
-
-- **Next.js 14** - Framework React com App Router
-- **TypeScript** - Para um código mais seguro e legível
-- **Tailwind CSS** - Estilização moderna e responsiva
-- **Radix UI** - Componentes acessíveis e reutilizáveis
-- **React Hook Form** - Formulários eficientes
-- **Genkit AI** - Funcionalidades inteligentes
-
 ## 🚀 Como rodar o projeto
 
 1. **Clone o repositório**
