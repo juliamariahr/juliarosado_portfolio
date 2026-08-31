@@ -74,6 +74,16 @@ const projectsData = {
       technologies: ["JavaScript", "TypeScript", "Node.js", "React", "MySQL"],
       category: 'fullstack' as ProjectCategory
     },
+    {
+      id: "project-4",
+      title: "Criança Renal",
+      imageUrl: "/img/criancarenal.jpeg",
+      imageHint: "saúde educação conscientização",
+      repoUrl: "https://github.com/juliamariahr/API-2023.2",
+      description: "Site informativo sobre Doença Renal Crônica infantil, com histórias de famílias, dados, direitos e localização de hospitais e recursos de tratamento.",
+      technologies: ["Flask", "Python", "MySQL", "Scrum", "HTML", "CSS", "JavaScript", "Git", "GitHub"],
+      category: 'fullstack' as ProjectCategory
+    },
   ],
   en: [
         {
@@ -126,6 +136,16 @@ const projectsData = {
       technologies: ["JavaScript", "TypeScript", "Node.js", "React", "MySQL"],
       category: 'fullstack' as ProjectCategory
     },
+    {
+      id: "project-4",
+      title: "Criança Renal",
+      imageUrl: "/img/crianca-renal.jpeg",
+      imageHint: "health education awareness",
+      repoUrl: "https://github.com/juliamariahr/API-2023.2",
+      description: "An informative website about Chronic Kidney Disease in children, featuring family stories, data, rights, and specialized hospitals and treatment resources.",
+      technologies: ["Flask", "Python", "MySQL", "Scrum", "HTML", "CSS", "JavaScript", "Git", "GitHub"],
+      category: 'fullstack' as ProjectCategory
+    },
   ]
 };
 
@@ -159,11 +179,14 @@ export default function ProjectsSection({ language }: ProjectsSectionProps) {
         <Carousel 
           opts={{
             align: "start",
-            loop: true,
+            dragFree: false,
+            duration: 35,
+            containScroll: "trimSnaps",
+            loop: false,
           }}
           className="w-full"
         >
-          <CarouselContent>
+          <CarouselContent className="px-2">
             {projects.map((project) => (
               <CarouselItem key={project.id} className="md:basis-1/2 lg:basis-1/3">
                   <Card className="flex flex-col h-[600px] overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 bg-card/80">
